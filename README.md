@@ -20,7 +20,7 @@ There are a few pre-defined npm scripts that you can run to compile, test, and d
   "clean": "npx hardhat clean",
   "test": "npx hardhat test",
   "compile": "npx hardhat compile",
-  "deploy:goerli": "npx hardhat run scripts/deploy.js --network goerli"
+  "deploy:goerli": "npx hardhat run scripts/deploy.ts --network goerli"
 },
 ```
 
