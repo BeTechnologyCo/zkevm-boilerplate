@@ -2,7 +2,7 @@
 
 This repository contains a boilerplate Hardhat project for EVM smart contract development in Solidity. It is intended to bootstrap the development of Immutable zkEVM-compatible smart contracts for developers of all skill levels.
 
-It contains an example `MyERC721` contract that inherits from the `ImmutableERC721Preset` contract from the [`@imtbl/zkevm-contracts`](https://github.com/immutable/zkevm-contracts) package, as well as example test cases and a deployment script to help you get started.
+It contains an example `MyERC721` contract that inherits from the `ImmutableERC721PermissionedMintable` contract from the [`@imtbl/zkevm-contracts`](https://github.com/immutable/zkevm-contracts) package, as well as example test cases and a deployment script to help you get started.
 
 For more information and guides, please refer to our [smart contract developer documentation](https://docs.x.immutable.com/docs/rollups/zkevm/smart-contract-development-framework/).
 
@@ -40,3 +40,5 @@ Then, run the following command in the `zkevm-boilerplate` directory:
 ```
 npm link @imtbl/zkevm-contracts
 ```
+
+TODO: add npm install instructions for zkevm-contracts when published to NPM
