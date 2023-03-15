@@ -35,7 +35,7 @@ describe("MyERC721", function () {
 
   it("Account with minter role should be able to mint multiple NFTs", async function () {
     const [owner, recipient] = await ethers.getSigners();
-    await contract.connect(owner).permissionedMint(recipient.address, 5);
+    await contract.connect(owner).mint(recipient.address, 5);
     expect(await contract.balanceOf(recipient.address)).to.equal(5);
     expect(await contract.ownerOf(1)).to.equal(recipient.address);
     expect(await contract.ownerOf(2)).to.equal(recipient.address);
@@ -48,7 +48,7 @@ describe("MyERC721", function () {
     const [_, acc1] = await ethers.getSigners();
     const minterRole = await contract.MINTER_ROLE();
     await expect(
-      contract.connect(acc1).permissionedMint(acc1.address, 1)
+      contract.connect(acc1).mint(acc1.address, 1)
     ).to.be.revertedWith(
       `AccessControl: account 0x70997970c51812dc3a010c7d01b50e0d17dc79c8 is missing role ${minterRole}`
     );
