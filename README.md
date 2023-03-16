@@ -23,22 +23,3 @@ There are a few pre-defined npm scripts that you can run to compile, test, and d
   "deploy:goerli": "npx hardhat run scripts/deploy.ts --network goerli"
 },
 ```
-
-### Note:
-
-Since the `zkevm-contracts` repository has not yet been published to NPM, you will need to clone it to your local machine and run the following command in the `zkevm-contracts` directory:
-
-```
-npm link
-
-# or if you need to run this with admin privileges
-sudo npm link
-```
-
-Then, run the following command in the `zkevm-boilerplate` directory:
-
-```
-npm link @imtbl/zkevm-contracts
-```
-
-TODO: add npm install instructions for zkevm-contracts when published to NPM
