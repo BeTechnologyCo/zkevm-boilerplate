@@ -10,7 +10,7 @@
     "deploy:goerli": "npx hardhat run scripts/deploy.ts --network goerli"
   },
   "author": "Immutable",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "dependencies": {
     "@openzeppelin/contracts": "^4.8.1",
     "dotenv": "^16.0.3",
