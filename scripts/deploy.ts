@@ -18,10 +18,10 @@ async function deploy() {
   );
   const contract: MyERC721 = await MyERC721.connect(deployer).deploy(
     deployer.address, // owner
-    "Imaginary Immutable Iguanas", // name
-    "III", // symbol
-    "https://example-base-uri.com/", // baseURI
-    "https://example-contract-uri.com/" // contractURI
+    "Immumon", // name
+    "IMN", // symbol
+    "http://imxserver.azurewebsites.net/api/nft/", // baseURI
+    "http://imxserver.azurewebsites.net/api/contract/" // contractURI
   );
   await contract.deployed();
 

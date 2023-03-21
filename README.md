@@ -23,3 +23,7 @@ There are a few pre-defined npm scripts that you can run to compile, test, and d
   "deploy:goerli": "npx hardhat run scripts/deploy.ts --network goerli"
 },
 ```
+
+## Contract address
+Goerli : 0x42DCB8F2c0bB08d7b085bE42c4B4d3d077c13582
+Imx : 
